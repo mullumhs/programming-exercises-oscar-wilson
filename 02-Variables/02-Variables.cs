@@ -36,9 +36,11 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            string name = "Kittenwhiskers";
-            string title = "Sir ";
-            Console.WriteLine("Greetings " + title.ToUpper() + name.ToLower() + "! ;3");
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("And your title?");
+            string title = Console.ReadLine();
+            Console.WriteLine("Greetings " + title.ToUpper() + " " + name.ToUpper() + "!");
             Console.Beep(440, 400);
             Console.Beep(440, 200);
             Console.Beep(660, 800);
