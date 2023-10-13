@@ -14,7 +14,9 @@ Main Tasks:
 
 Questions:
 1. What is a variable?
+A variable holds information that can vary!!!!!!
 2. What is a string?
+A string is text
 
 Extension Tasks:
 1. Try creating two string variables and using them in the same message.
@@ -34,7 +36,13 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            
+            string name = "Kittenwhiskers";
+            string title = "Sir ";
+            Console.WriteLine("Greetings " + title.ToUpper() + name.ToLower() + "! ;3");
+            Console.Beep(440, 400);
+            Console.Beep(440, 200);
+            Console.Beep(660, 800);
+            Console.ReadLine();
 
         }
     }
