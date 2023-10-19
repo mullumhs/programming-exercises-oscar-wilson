@@ -42,10 +42,17 @@ namespace ProgrammingExercisesIST
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
             char quotes = '"';
+            
             Console.WriteLine($"\n{name.ToUpper()}: {quotes}Hello World!{quotes}");
+            Console.Beep(440, 500);
             Console.WriteLine($"COMPUTER: {quotes}There is no World, only TextVoid...{quotes}");
+            Console.Beep(220, 500);
             Console.WriteLine($"{name.ToUpper()}: {quotes}What's TextVoid?{quotes}");
+            Console.Beep(440, 500);
             Console.WriteLine($"COMPUTER: {quotes}...{quotes}");
+            Console.Beep(220, 500);
+            Console.WriteLine($"COMPUTER: {quotes}...{quotes}");
+            Console.Beep(220, 500);
             Console.WriteLine("\nYou should probably run.");
             Console.ReadLine();
         }
