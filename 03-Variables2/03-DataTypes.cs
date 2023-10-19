@@ -17,7 +17,9 @@ Main Tasks:
 
 Questions:
 1. What is the best data type for a whole number?
+int
 2. What are some data types you could use for decimal numbers?
+double
 
 Extension Tasks:
 1. Use Google to find out what other data types are in C#, then have a go at using them.
@@ -44,6 +46,19 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            int mrInt = 1;
+            double mrDouble = 3.6;
+            bool mrBool = false;
+            char mrChar = 'j';
+            // Single quotes for characters?
+            string mrString = "hi sisters";
+            // Double quotes for strings?
+
+            Console.WriteLine("There are " + mrInt + "days until I score " + mrDouble + "points in UnnamedGame, right?");
+            Console.WriteLine(mrBool);
+            Console.ReadLine();
+            Console.WriteLine(mrChar + mrString);
+            Console.ReadLine();
 
         }
     }

@@ -14,7 +14,9 @@ Main Tasks:
 
 Questions:
 1. Why were the words "year", "country", and "population" originally underlined?
+bc they were w/o a value
 2. What is the purpose of the dollar sign ($) before the double quotes in the final message?
+to add the variables into the string nicely (rather than using +)
 
 Extension Tasks:
 1. Print out another statement using three or more new variables of different data types.
@@ -36,10 +38,15 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            int year = 2016;
+            string country = "China";
+            double population = 1.379;
 
             // Do not edit below this line
             Console.WriteLine($"As of {year} the population of {country} was {population} billion.");
+            Console.WriteLine("\t penis \nballs");
+            country = year.ToString();
+            Console.WriteLine(country);
             Console.ReadLine();
         }
     }

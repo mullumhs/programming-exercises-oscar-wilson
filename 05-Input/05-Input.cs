@@ -39,7 +39,15 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            char quotes = '"';
+            Console.WriteLine($"\n{name.ToUpper()}: {quotes}Hello World!{quotes}");
+            Console.WriteLine($"COMPUTER: {quotes}There is no World, only TextVoid...{quotes}");
+            Console.WriteLine($"{name.ToUpper()}: {quotes}What's TextVoid?{quotes}");
+            Console.WriteLine($"COMPUTER: {quotes}...{quotes}");
+            Console.WriteLine("\nYou should probably run.");
+            Console.ReadLine();
         }
     }
 }
