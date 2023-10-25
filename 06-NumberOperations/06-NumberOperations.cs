@@ -16,8 +16,14 @@ Main Tasks:
 
 Questions:
 1. What does "Convert.ToDouble" do?
+Converts the data type to double
+
 2. What is a parameter? Give an example of where you have used one.
+A parameter is a variable used in a method. 
+For example in Convert.ToDouble(Console.ReadLine()), Console.ReadLine() is a parameter
+
 3. Why is the 'Console.ReadLine()' a parameter to Convert.ToDouble()?
+Because read line onbly outputs a string so you have to convert it to a double
 
 Extension Tasks:
 1. Modify the program to work with the 'double' type.
@@ -49,10 +55,33 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // How to input a number from the user and store it in a variable 'x'
-            Console.WriteLine("Please enter a number for X:");
+            Console.Write("Please enter a number for X: ");
             double x = Convert.ToDouble(Console.ReadLine());
 
             // Your code goes below here
+            Console.Write("Please enter a number for Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            // Add
+            Console.WriteLine($"{x} + {y} = {x+y}");
+
+            // Subtraction
+            Console.WriteLine($"{x} - {y} = {x-y}");
+
+            // Multiplication
+            Console.WriteLine($"{x} * {y} = {x*y}");
+
+            // Division
+            Console.WriteLine($"{x} / {y} = {x/y}");
+
+            // Remainder
+            Console.WriteLine($"The remainder of {x} / {y} = {x % y}");
+
+            // Division + Remainder
+            Console.WriteLine($"{x} / {y} = {Math.Floor(x / y)} remainder {x % y}");
+
+            // Meow
+            Console.ReadLine();
 
         }
     }
