@@ -43,10 +43,52 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Ask the user to pick a door
-            Console.WriteLine("Pick a Door: 1, 2 or 3");
+            char quote = '"';
+            Console.WriteLine($"GAME SHOW HOST: {quote}Pick a Door: 1, 2 or 3{quote}");
+            Console.Beep(200, 500);
 
             // Your code goes below here
-
+            string door = Console.ReadLine();
+            if (door == "1" || door == "2" || door == "3")
+            {
+                Console.WriteLine("hint: pick another number");
+            }
+            else
+            {
+                Console.WriteLine($"GAME SHOW HOST: {quote}...{quote}");
+                Console.Beep(200, 1000);
+                Console.WriteLine("The game show host collapses onto the floor-- he was not designed to handle any input besides 1, 2 or 3. \nHe starts to shake violently as an exit door materialises out of thin air.");
+                Console.Beep(600, 500);
+                Console.WriteLine("Go to the door? y/n");
+                string answer = Console.ReadLine();
+                if (answer == "y")
+                {
+                    Console.WriteLine("\nYou run to the door, but hesitate to open it.");
+                    Console.Beep(600, 500);
+                    Console.WriteLine("Open it? y/n");
+                    string answer2 = Console.ReadLine();
+                    if (answer2 == "y")
+                    {
+                        Console.WriteLine("\nPress enter to escape");
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nThe game show host exploded. You died.");
+                        Console.ReadLine();
+                    }
+                }
+                else if (answer == "n")
+                {
+                    Console.WriteLine("\nThe game show host exploded. You happily died painfully.");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("\nThe game show host exploded. Your hesitation allowed for it to kill you.");
+                    Console.ReadLine();
+                }
+            }
         }
     }
 }
