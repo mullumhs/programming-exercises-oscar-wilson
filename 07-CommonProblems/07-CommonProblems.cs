@@ -35,7 +35,7 @@ namespace ProgrammingExercisesIST
             string my_name = "Jeff";
             Console.WriteLine("My name is " + my_name);
             Console.ReadLine();
-        {
+        }
     }
 }
 

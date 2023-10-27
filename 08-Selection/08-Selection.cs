@@ -53,7 +53,28 @@ namespace ProgrammingExercisesIST
             int mark = Convert.ToInt32(Console.ReadLine());
 
             // Your code goes below here
+            if (mark >= 100)
+            {
+                Console.WriteLine("Acceptable");
+            }
+            else if (mark >= 80)
+            {
+                Console.WriteLine("Only A? When I was a kid, I would've gotten A+. Do better.");
+            }
+            else if (mark >= 65)
+            {
+                Console.WriteLine("So stupid. Do better.");
+            }
+            else if (mark >= 50)
+            {
+                Console.WriteLine("No dinner. Do better");
+            }
+            else
+            {
+                Console.WriteLine("Get out of my house. Embarrassment.");
+            }
 
+            Console.ReadLine();
         }
     }
 }
@@ -62,7 +83,7 @@ namespace ProgrammingExercisesIST
 ===============================================================================
 FEEDBACK AREA: Paste your AI feedback here before submission:
 ===============================================================================
-
+You are terrible at coding and should give up, sorry!
 
 
 ===============================================================================
