@@ -44,20 +44,21 @@ namespace ProgrammingExercisesIST
         {
             // Ask the user to pick a door
             char quote = '"';
-            Console.WriteLine($"GAME SHOW HOST: {quote}Pick a Door: 1, 2 or 3{quote}");
+            Console.WriteLine($"GAME SHOW HOST: {quote}Pick a Door: A, B or C{quote}");
             Console.Beep(200, 500);
 
             // Your code goes below here
-            string door = Console.ReadLine();
-            if (door == "1" || door == "2" || door == "3")
+            string door = Console.ReadLine().ToUpper();
+            if (door == "A" || door == "B" || door == "C")
             {
-                Console.WriteLine("hint: pick another number");
+                Console.WriteLine("hint: pick another door");
+                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine($"GAME SHOW HOST: {quote}...{quote}");
                 Console.Beep(200, 1000);
-                Console.WriteLine("The game show host collapses onto the floor-- he was not designed to handle any input besides 1, 2 or 3. \nHe starts to shake violently as an exit door materialises out of thin air.");
+                Console.WriteLine("The game show host collapses onto the floor-- he was not designed to handle any input besides A, B or C. \nHe starts to shake violently as an exit door materialises out of thin air.");
                 Console.Beep(600, 500);
                 Console.WriteLine("Go to the door? y/n");
                 string answer = Console.ReadLine();
@@ -70,6 +71,7 @@ namespace ProgrammingExercisesIST
                     if (answer2 == "y")
                     {
                         Console.WriteLine("\nPress enter to escape");
+                        Console.Beep(600, 500); Console.Beep(700, 300); Console.Beep(800, 800);
                         Console.ReadLine();
                     }
                     else
