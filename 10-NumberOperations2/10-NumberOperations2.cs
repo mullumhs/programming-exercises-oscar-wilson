@@ -14,11 +14,15 @@ Main Tasks:
 
 Questions:
 1. What is the difference between Console.ReadLine() and Console.ReadKey()?
+read key only reads a key whereas readline you have to press enter for it to read tehe line
 2. Why is the choice stored as a string instead of an integer?
+it doesnt realy matter i tihkn
 
 Extension Tasks:
 1. Research online to learn how to perform exponentiation, e.g., X to the power of Y.
+Math.Pow(X, Y)
 2. Research online to learn how to use the 'ToString()' function to round the answer to two decimal places.
+
 
 Example:
 - Below is an example of the program's output:
@@ -56,7 +60,26 @@ namespace ProgrammingExercisesIST
 
 
             // Wait for any key before exiting
-            Console.WriteLine();
+            Console.WriteLine("Please enter a number for X:");
+            double X = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter a number for Y:");
+            double Y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("\nWhat would you like to do:\n1. Division\n2. Exponentiation\n");
+            string Choice = Console.ReadLine();
+
+            if(Choice == "1")
+            {
+                Console.WriteLine($"\nThe answer is: {X/Y}\n");
+            }
+            else if(Choice == "2")
+            {
+                Console.WriteLine($"\nThe answer is: {Math.Pow(X, Y)}\n");
+            }
+            else
+            {
+                Console.WriteLine("\n...\n");
+            }
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }

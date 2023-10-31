@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Services;
 
 /*
 ===============================================================================
@@ -50,7 +51,24 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            Console.WriteLine("Choose an opiton:\n1cirl\n2retcale\n3tringle");
+            string Choice = Console.ReadLine();
+            if (Choice == "1")
+            {
+                Console.Write("Enter Radius: ");
+                int R = Convert.ToInt32(Console.Read());
+                Console.Write("Enter Heigt: ");
+                int H = Convert.ToInt32(Console.Read());
+                Console.WriteLine("The Area of Circle is {pi*");
+            }
+            else if (Choice == "2")
+            {
+                Console.Write("Enter Radius: ");
+                int R = Convert.ToInt32(Console.Read());
+                Console.Write("Enter Heigt: ");
+                int H = Convert.ToInt32(Console.Read());
+                Console.WriteLine("The Area of Circle is {pi*")
+            }
         }
     }
 }
@@ -59,7 +77,7 @@ namespace ProgrammingExercisesIST
 ===============================================================================
 FEEDBACK AREA: Paste your AI feedback here before submission:
 ===============================================================================
-
+no thanks i choose my own destiny
 
 
 ===============================================================================
