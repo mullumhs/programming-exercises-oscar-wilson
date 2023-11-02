@@ -49,7 +49,62 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            // Your code goes below here
+            ShowMenu();
+            string Choice = Console.ReadLine();
+            if (Choice == "1")
+            {
+               CalculateAreaCircle();
+            }
+            else if (Choice == "2")
+            {
+                CalculateAreaRectangle();
+            }
+            else if (Choice == "3")
+            {
+                CalculateAreaTriangle();
+            }
+            else
+            {
+                Console.WriteLine("...");
+            }
+            Exit();
+        }
 
+        static void ShowMenu()
+        {
+            Console.WriteLine("Choose an opiton:\n1cirl\n2retcale\n3tringle");
+        }
+
+        static void CalculateAreaCircle()
+        {
+            Console.Write("Enter Radius: ");
+            double R = Convert.ToDouble(Console.Read());
+
+            Console.WriteLine($"The Area of Circle is {Math.PI * Math.Pow(R, 2)}");
+        }
+
+        static void CalculateAreaRectangle()
+        {
+            Console.Write("Enter Width: ");
+            double W = Convert.ToDouble(Console.Read());
+            Console.Write("Enter Heigt: ");
+            double H = Convert.ToDouble(Console.Read());
+            Console.WriteLine($"The Area of Circle is {W * H}");
+        }
+
+        static void CalculateAreaTriangle()
+        {
+            Console.Write("Enter Width: ");
+            double W = Convert.ToDouble(Console.Read());
+            Console.Write("Enter Heigt: ");
+            double H = Convert.ToDouble(Console.Read());
+            Console.WriteLine($"The Area of Circle is {0.5 * W * H}");
+        }
+
+        static void Exit()
+        {
+            Console.ReadKey();
         }
     }
 }
