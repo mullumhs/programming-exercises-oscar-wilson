@@ -56,19 +56,31 @@ namespace ProgrammingExercisesIST
             if (Choice == "1")
             {
                 Console.Write("Enter Radius: ");
-                int R = Convert.ToInt32(Console.Read());
-                Console.Write("Enter Heigt: ");
-                int H = Convert.ToInt32(Console.Read());
-                Console.WriteLine("The Area of Circle is {pi*");
+                double R = Convert.ToDouble(Console.Read());
+                
+                Console.WriteLine($"The Area of Circle is {Math.PI*Math.Pow(R, 2)}");
             }
             else if (Choice == "2")
             {
-                Console.Write("Enter Radius: ");
-                int R = Convert.ToInt32(Console.Read());
+                Console.Write("Enter Width: ");
+                double W = Convert.ToDouble(Console.Read());
                 Console.Write("Enter Heigt: ");
-                int H = Convert.ToInt32(Console.Read());
-                Console.WriteLine("The Area of Circle is {pi*")
+                double H = Convert.ToDouble(Console.Read());
+                Console.WriteLine($"The Area of Circle is {W * H}");
             }
+            else if (Choice == "3")
+            {
+                Console.Write("Enter Width: ");
+                double W = Convert.ToDouble(Console.Read());
+                Console.Write("Enter Heigt: ");
+                double H = Convert.ToDouble(Console.Read());
+                Console.WriteLine($"The Area of Circle is {0.5*W * H}");
+            }
+            else
+            {
+                Console.WriteLine("...");
+            }
+            Console.ReadKey();
         }
     }
 }
