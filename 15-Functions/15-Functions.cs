@@ -68,11 +68,16 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
-
+            Console.WriteLine(MultiplyNumber(x, y));
             
 
             // "Exit" method is called here
             Exit();
+        }
+
+        private static int MultiplyNumber(int x, int y)
+        {
+            return x * y;
         }
 
         // Create your functions here
