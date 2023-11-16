@@ -71,8 +71,69 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Write your code here
+            string choice = MainMenu();
+            if ( choice == "1")
+            {
+                double output = CtoF();
+                Console.WriteLine($"That is {output} degrees Fahrenheit");
+            }
+            else if (choice == "2")
+            {
+                double output = FtoC();
+                Console.WriteLine($"That is {output} degrees Celsius");
+            }
+            else
+            {
+                Console.WriteLine("...");
+            }
+            Exit();
+        }
 
+        static void Exit()
+        {
+            Console.WriteLine("\nPress any key to exit");
+            Console.ReadKey();
+        }
+
+        static double FtoC()
+        {
+            Console.Write("Enter a temp in Fahrenheit: ");
+            string poopy = (Console.ReadLine());
+            if (Double.TryParse(poopy, out double result) == false)
+            {
+                Console.WriteLine("pick a number you idiot");
+            }
+            else
+            {
+                double input = Convert.ToDouble(poopy);
+                return (input - 32) * 5/9;
+            }
+
+            return FtoC();
+        }
+
+        static double CtoF()
+        {
+            Console.Write("Enter a temp in Celsius: ");
+            string poopy = (Console.ReadLine());
+            if (Double.TryParse(poopy, out double result) == false)
+            {
+                Console.WriteLine("pick a number you idiot");
+            }
+            else
+            {
+                double input = Convert.ToDouble(poopy);
+                return (input * 9 / 5) + 32;
+            }
+
+            return CtoF();
+        }
+
+        static string MainMenu()
+        {
+            Console.WriteLine("What would you like to do?\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius");
+            string choice = Console.ReadLine();
+            return choice;
         }
     }
 }

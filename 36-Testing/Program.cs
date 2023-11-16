@@ -13,7 +13,12 @@ namespace _36_Testing
         static void Main(string[] args)
         {
             // Write your code here
-
+            int count = 1;
+            while (count < 11)
+            {
+                Console.WriteLine(count);
+                count++;
+            }
 
 
 

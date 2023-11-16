@@ -39,6 +39,7 @@ namespace ProgrammingExercisesIST
 {
     class Project_21_WhileLoops
     {
+        
         static void Main(string[] args)
         {
             WaitBetween("Loop to ensure number is less than 100: ");
