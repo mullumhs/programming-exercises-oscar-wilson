@@ -47,7 +47,29 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here, passing in the required arguments
-            SayHello(name);
+            
+            SayHello();
+            Subttract();
+            Exit();
+        }
+
+        private static void Exit()
+        {
+            Console.WriteLine("exit");
+            Console.ReadKey();
+        }
+
+        private static void Subttract()
+        {
+            double x = Convert.ToDouble(Console.ReadLine());
+            double y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(x - y);
+        }
+
+        private static void SayHello()
+        {
+            string name = Console.ReadLine();
+            Console.WriteLine($"Hello {name}");
         }
 
         // Write your methods including parameters here
