@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,11 +14,13 @@ namespace _36_Testing
         static void Main(string[] args)
         {
             // Write your code here
-            int count = 1;
-            while (count < 11)
+            int x = 1;
+            int y = 0;
+            for (int i = 0; i < 1000000000; i=x+y)
             {
-                Console.WriteLine(count);
-                count++;
+                Console.WriteLine(i);
+                y = x;
+                x = i;
             }
 
 
