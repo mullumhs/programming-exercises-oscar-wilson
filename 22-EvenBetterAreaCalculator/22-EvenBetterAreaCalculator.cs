@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 /*
 ===============================================================================
@@ -27,7 +28,31 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code here
-
+            string choice = RunMenuOptions();
+            while (choice != "4")
+            {
+                if (choice == "1")
+                {
+                    CalculateCircle();
+                }
+                else if (choice == "2")
+                {
+                    CalculateRectangle();
+                }
+                else if (choice == "3")
+                {
+                    CalculateTriangle();
+                }
+                else
+                {
+                    ErrorMessage();
+                }
+                Console.WriteLine("press key to continue!");
+                Console.ReadKey();
+                choice = RunMenuOptions();
+            }
+            Console.WriteLine("bye sisters!");
+            Console.ReadKey();
         }
 
         // Functions for menu and calculations
@@ -74,8 +99,7 @@ namespace ProgrammingExercisesIST
         private static void ErrorMessage()
         {
             Console.WriteLine();
-            Console.WriteLine("Invalid Choice! Press any key to continue...");
-            Console.ReadKey();
+            Console.WriteLine("...");
         }
     }
 }
