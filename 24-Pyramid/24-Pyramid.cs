@@ -50,7 +50,18 @@ namespace ProgrammingExercisesIST
             int height = GetNumber("Enter a height for the pyramid", 0, 20);
 
             // Write your code here
-
+            for (int i = 1; i <= height; i++)
+            {
+                for (int k = 0; k < (height - i); k++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < (i*2)-1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
 
 
             // Wait at end

@@ -42,11 +42,37 @@ namespace ProgrammingExercisesIST
             int guess = -1;
 
             // Write your code here
-
+            int attempts = 0;
+            while (guess != randomNumber)
+            {
+                guess = dothinng();
+                checkthing(guess, randomNumber);
+                attempts++;
+            }
+            Console.WriteLine($"You did it in {attempts} number of tries!");
 
 
             // Wait at end
+
             WaitForKeyPress();
+        }
+
+        private static void checkthing(int ges, int ans)
+        {
+            if (Math.Sign(ges - ans) == -1)
+            {
+                Console.WriteLine("Too low!");
+            }
+            else
+            {
+                Console.WriteLine("Too High!");
+            }
+        }
+
+        private static int dothinng()
+        {
+            Console.Write("Guess a number between 1 and 100: ");
+            return Convert.ToInt32(Console.ReadLine());
         }
 
         static int GenerateRandomNumber(int min, int max)

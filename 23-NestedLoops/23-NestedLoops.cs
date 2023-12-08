@@ -42,7 +42,16 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code here
-
+            Console.Write("Enter Length: ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= length; i++)
+            {
+                for (int j = 1; j <= length; j++)
+                {
+                    Console.Write(String.Format("{0, -5}", i*j));
+                }
+                Console.WriteLine();
+            }
 
             // Wait at end
             WaitForKeyPress();
